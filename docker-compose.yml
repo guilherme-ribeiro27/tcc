@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: postgres:lastest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: tcc
+      POSTGRES_PASSWORD: tcc
+      POSTGRES_DB: tcc
+    volumes:
+      - postgres_data:/data/postgres
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: tcc
+      MONGO_INITDB_ROOT_PASSWORD: tcc
+    volumes:
+      - mongodb_data:/data/mongodb
+    
+volumes:
+  mongo_data:
+  postgres_data:
