@@ -1,0 +1,1 @@
+"asin","title","imgUrl","productURL","stars","reviews","price","listPrice","categoryName","isBestSeller","boughtInLastMonth"
